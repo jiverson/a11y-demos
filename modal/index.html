@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>a11y-calendar</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/open-props" />
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <div class="App">
+    <h1>Modals the <em>easy</em> way</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit alias dicta quibusdam cumque ipsa ipsum
+      reiciendis animi, officia provident veniam quis delectus minima earum suscipit ea, beatae vitae ipsam nemo.</p>
+    <p>Alias, architecto sapiente nostrum id, sed explicabo numquam aspernatur ratione qui excepturi repellat porro
+      culpa
+      molestiae? Culpa dolorem commodi cupiditate, eos deleniti similique repellendus nam velit natus a soluta et.</p>
+    <p>Fugiat ratione impedit officiis? Eligendi sapiente culpa tenetur esse quo reiciendis illum vero nisi ullam
+      consequatur illo molestiae, nihil eaque. Esse asperiores tenetur natus! Quo asperiores molestias sed assumenda
+      alias.</p>
+    <p>Sequi quo animi, nostrum laboriosam veritatis consequatur. Eos cumque unde porro explicabo provident, possimus
+      alias magni pariatur quis consequuntur voluptatum? Debitis necessitatibus facilis fugiat repudiandae nobis neque
+      nam, vel odio?</p>
+    <button class="button open-button">open modal</button>
+
+    <dialog class="modal" id="modal">
+      <button class="button close-button">X</button>
+      <h2>An interesting title</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse nisi, laboriosam illum temporibus ipsam?
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, quo.</p>
+      <form class="form" method="dialog">
+        <label>Your name <input type="text"></label>
+        <label>Your email <input type="email"></label>
+        <!-- // "Confirm" button of form triggers "close" on dialog because of [method="dialog"]-->
+        <button class="button dialog-priority" value="cancel">close modal</button>
+        <button class="button" value="default">submit form</button>
+      </form>
+    </dialog>
+
+  </div>
+
+</body>
+
+</html>
